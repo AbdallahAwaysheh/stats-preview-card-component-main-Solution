@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Stats preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,19 +16,29 @@
   </style>
 </head>
 <body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
+  <main>
+    <div class="content">
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+          <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+          experience, and overall efficiency.</p>
+          <div class="numbs">
+            <div class="companies"><h1>10k+</h1><p>companies</p></div>
+            <div class="companies"><h1>314</h1><p>templates</p></div>
+            <div class="companies"><h1>12m+</h1><p>queries</p></div>
+          </div>
+      </div>
+    
+    
+    <aside>
+      <div id="filter"></div>
+      <img src="/images/image-header-desktop.jpg" alt="">
+    </aside>  
+  </main>
+  
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">AbdallahAwaysheh</a>.
   </div>
 </body>
 </html>

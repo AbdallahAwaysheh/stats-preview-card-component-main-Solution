@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+html{
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%)
+}
+main{
+    background-color: hsl(244, 38%, 16%);
+    color: aliceblue;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "cont img";
+    max-width: 1000px;
+    border-radius: 10px;
+}
+.content{
+    align-items: center;
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px 60px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+}
+.content span{
+    color:hsl(277, 64%, 61%) ;
+}
+aside{
+    position: relative;
+    grid-area: img;
+    min-width: 350px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+.numbs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+}
+.companies{
+    margin-right: 50px;
+    font-size: 14px;
+}
+p{
+    line-height: 1.6;
+    font-weight: 200;
+}
+#filter{
+    position: absolute;
+    background-color: hsla(277, 96%, 36%, 0.427);
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+@media only screen and (max-width:800px){
+
+    main{
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr ;
+        grid-template-areas: "img"
+        "cont";
+        margin: 50%;
+    }
+    .numbs{
+        flex-direction: column;
+        
+    }
+    .content{
+        text-align: center;
+        font-size: 100%;
+        
+    }
+    .content h1{
+        margin-bottom: 20px;
+        
+    }
+    .companies{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        margin-right: 0;
+        font-size: 10px;
+    }
+    img{
+        border-radius: 10px 10px 0 0;
+    }
+    #filter{
+        border-radius: 10px 10px 0 0;
+    }
+    main{
+        min-height:none;
+    }
+    
+}
